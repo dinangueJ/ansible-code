@@ -1,0 +1,40 @@
+---
+- hosts: devserver
+  become: yes
+  ignore_errors: yes
+  vars :
+    username: jeanne
+    pkg_name: httpd
+  tasks:
+    - name: creating user
+      user:
+        name: "{{ username }}"
+        comment: jeanne Admin
+        shell: /bin/bash
+          # when: ansible_os_family == "Debian"
+    - name: create file
+      file:
+       path: /tmp/ansible.txt
+       state: touch
+       mode: '0600'
+    - name: create directory
+      file:
+       path: /tmp/dir
+       state: directory
+       mode: '0777'
+    - name: install apache
+      yum:
+        name: "{{ pkg_name }}"
+        state: present 
+
+    - name: install finger
+      package:
+       name: "{{ item }}"
+       state: present
+      with_items:
+        - wget
+        - samba
+        - java-8*
+        - finger   
+       
+         
