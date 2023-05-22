@@ -1,0 +1,423 @@
+2023-05-20 15:38:17,608 p=3009 u=ec2-user n=ansible | 18.216.179.186 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 18.216.179.186 port 22: Connection timed out",
+    "unreachable": true
+}
+2023-05-20 15:38:17,615 p=3009 u=ec2-user n=ansible | 3.137.158.25 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 3.137.158.25 port 22: Connection timed out",
+    "unreachable": true
+}
+2023-05-20 15:41:34,825 p=3068 u=ec2-user n=ansible | 18.212.21.228 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:41:43,900 p=3068 u=ec2-user n=ansible | 34.237.218.23 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 34.237.218.23 port 22: Connection timed out",
+    "unreachable": true
+}
+2023-05-20 15:44:14,399 p=32623 u=ec2-user n=ansible | 18.212.21.228 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:44:14,404 p=32623 u=ec2-user n=ansible | 34.237.218.231 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:45:03,301 p=32669 u=ec2-user n=ansible | 18.212.21.228 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-20 15:45:03,348 p=32669 u=ec2-user n=ansible | 34.237.218.231 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 03:38:20,643 p=6926 u=ec2-user n=ansible | 34.237.218.231 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 03:38:20,699 p=6926 u=ec2-user n=ansible | 18.212.21.228 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 10:18:04,269 p=9886 u=ec2-user n=ansible | 34.237.218.231 | CHANGED | rc=0 >>
+Sun May 21 10:18:04 UTC 2023
+
+2023-05-21 10:18:04,345 p=9886 u=ec2-user n=ansible | 18.212.21.228 | CHANGED | rc=0 >>
+Sun May 21 10:18:04 UTC 2023
+
+2023-05-21 10:36:23,143 p=10024 u=ec2-user n=ansible | 18.212.21.228 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 10:36:23,419 p=10024 u=ec2-user n=ansible | 34.237.218.231 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 11:04:16,260 p=10447 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 11:04:16,275 p=10447 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 11:04:19,638 p=10447 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:04:19,660 p=10447 u=ec2-user n=ansible | TASK [Creating user] ******************************************************************************************
+2023-05-21 11:04:20,299 p=10447 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:04:20,313 p=10447 u=ec2-user n=ansible | TASK [create file] ********************************************************************************************
+2023-05-21 11:04:20,817 p=10447 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:04:20,830 p=10447 u=ec2-user n=ansible | TASK [read the output] ****************************************************************************************
+2023-05-21 11:04:20,975 p=10447 u=ec2-user n=ansible | ok: [18.212.21.228] => {
+    "output": {
+        "changed": true,
+        "dest": "/tmp/ansible.txt",
+        "diff": {
+            "after": {
+                "atime": 1684667060.773319,
+                "mode": "0600",
+                "mtime": 1684667060.773319,
+                "path": "/tmp/ansible.txt",
+                "state": "touch"
+            },
+            "before": {
+                "atime": 1684667060.768964,
+                "mode": "0644",
+                "mtime": 1684667060.768964,
+                "path": "/tmp/ansible.txt",
+                "state": "absent"
+            }
+        },
+        "failed": false,
+        "gid": 0,
+        "group": "root",
+        "mode": "0600",
+        "owner": "root",
+        "size": 0,
+        "state": "file",
+        "uid": 0
+    }
+}
+2023-05-21 11:04:20,988 p=10447 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 11:04:21,280 p=10447 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:04:21,292 p=10447 u=ec2-user n=ansible | TASK [install apache] *****************************************************************************************
+2023-05-21 11:04:26,463 p=10447 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:04:26,498 p=10447 u=ec2-user n=ansible | TASK [install finger] *****************************************************************************************
+2023-05-21 11:04:28,002 p=10447 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=wget)
+2023-05-21 11:04:35,502 p=10447 u=ec2-user n=ansible | changed: [18.212.21.228] => (item=finger)
+2023-05-21 11:04:35,540 p=10447 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 11:04:35,541 p=10447 u=ec2-user n=ansible | 18.212.21.228              : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 11:29:36,902 p=10818 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 11:29:36,916 p=10818 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 11:29:39,088 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:29:39,111 p=10818 u=ec2-user n=ansible | TASK [Creating user] ******************************************************************************************
+2023-05-21 11:29:39,858 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:29:39,888 p=10818 u=ec2-user n=ansible | TASK [create file] ********************************************************************************************
+2023-05-21 11:29:40,274 p=10818 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:29:40,287 p=10818 u=ec2-user n=ansible | TASK [read the output] ****************************************************************************************
+2023-05-21 11:29:40,313 p=10818 u=ec2-user n=ansible | fatal: [18.212.21.228]: FAILED! => {"msg": "'msg' and 'var' are incompatible options"}
+2023-05-21 11:29:40,314 p=10818 u=ec2-user n=ansible | ...ignoring
+2023-05-21 11:29:40,325 p=10818 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 11:29:40,609 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:29:40,621 p=10818 u=ec2-user n=ansible | TASK [install apache] *****************************************************************************************
+2023-05-21 11:29:41,667 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:29:41,682 p=10818 u=ec2-user n=ansible | TASK [install finger] *****************************************************************************************
+2023-05-21 11:29:42,528 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=wget)
+2023-05-21 11:29:43,365 p=10818 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=finger)
+2023-05-21 11:29:43,392 p=10818 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 11:29:43,392 p=10818 u=ec2-user n=ansible | 18.212.21.228              : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2023-05-21 11:33:04,309 p=10985 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/play.yml': line 24, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        msg: "Hello from ansible this is running on {{ ansible_os_family }}"
+       var: output
+       ^ here
+
+2023-05-21 11:36:21,466 p=11147 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 11:36:21,479 p=11147 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 11:36:23,567 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:36:23,591 p=11147 u=ec2-user n=ansible | TASK [Creating user] ******************************************************************************************
+2023-05-21 11:36:24,131 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:36:24,145 p=11147 u=ec2-user n=ansible | TASK [create file] ********************************************************************************************
+2023-05-21 11:36:24,565 p=11147 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:36:24,577 p=11147 u=ec2-user n=ansible | TASK [read the output] ****************************************************************************************
+2023-05-21 11:36:24,604 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228] => {
+    "msg": "Hello from ansible this is running on RedHat"
+}
+2023-05-21 11:36:24,615 p=11147 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 11:36:24,888 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:36:24,899 p=11147 u=ec2-user n=ansible | TASK [install apache] *****************************************************************************************
+2023-05-21 11:36:26,028 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:36:26,041 p=11147 u=ec2-user n=ansible | TASK [install finger] *****************************************************************************************
+2023-05-21 11:36:26,900 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=wget)
+2023-05-21 11:36:31,963 p=11147 u=ec2-user n=ansible | changed: [18.212.21.228] => (item=samba)
+2023-05-21 11:36:35,214 p=11147 u=ec2-user n=ansible | failed: [18.212.21.228] (item=java-8*) => {"ansible_loop_var": "item", "changed": false, "item": "java-8*", "msg": "No package matching 'java-8*' found available, installed or updated", "rc": 126, "results": ["No package matching 'java-8*' found available, installed or updated"]}
+2023-05-21 11:36:39,272 p=11147 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=finger)
+2023-05-21 11:36:39,275 p=11147 u=ec2-user n=ansible | ...ignoring
+2023-05-21 11:36:39,299 p=11147 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 11:36:39,299 p=11147 u=ec2-user n=ansible | 18.212.21.228              : ok=7    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2023-05-21 11:55:26,662 p=11621 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 11:55:26,677 p=11621 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 11:55:28,627 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:55:28,652 p=11621 u=ec2-user n=ansible | TASK [Creating user] ******************************************************************************************
+2023-05-21 11:55:29,241 p=11621 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:55:29,254 p=11621 u=ec2-user n=ansible | TASK [create file] ********************************************************************************************
+2023-05-21 11:55:29,657 p=11621 u=ec2-user n=ansible | changed: [18.212.21.228]
+2023-05-21 11:55:29,669 p=11621 u=ec2-user n=ansible | TASK [read the output] ****************************************************************************************
+2023-05-21 11:55:29,695 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228] => {
+    "msg": "Hello from ansible this is running on RedHat"
+}
+2023-05-21 11:55:29,708 p=11621 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 11:55:29,980 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:55:29,992 p=11621 u=ec2-user n=ansible | TASK [install apache] *****************************************************************************************
+2023-05-21 11:55:31,108 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 11:55:31,121 p=11621 u=ec2-user n=ansible | TASK [install finger] *****************************************************************************************
+2023-05-21 11:55:31,980 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=wget)
+2023-05-21 11:55:32,831 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=samba)
+2023-05-21 11:56:12,669 p=11621 u=ec2-user n=ansible | changed: [18.212.21.228] => (item=java-11*)
+2023-05-21 11:56:14,730 p=11621 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=finger)
+2023-05-21 11:56:14,757 p=11621 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 11:56:14,757 p=11621 u=ec2-user n=ansible | 18.212.21.228              : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:04:53,800 p=12021 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 12:04:53,815 p=12021 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 12:04:57,066 p=12021 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:04:57,089 p=12021 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 12:04:57,544 p=12021 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:04:57,568 p=12021 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 12:04:57,569 p=12021 u=ec2-user n=ansible | 18.212.21.228              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:05:23,831 p=12125 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 12:05:23,849 p=12125 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 12:05:25,664 p=12125 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:05:25,685 p=12125 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 12:05:26,106 p=12125 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:05:26,135 p=12125 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 12:05:26,135 p=12125 u=ec2-user n=ansible | 18.212.21.228              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:30:21,219 p=12483 u=ec2-user n=ansible | [WARNING]: Error in vault password prompt (default): Passwords do not match
+
+2023-05-21 12:30:21,219 p=12483 u=ec2-user n=ansible | ERROR! Passwords do not match
+2023-05-21 12:30:45,493 p=12596 u=ec2-user n=ansible | Encryption successful
+2023-05-21 12:31:43,365 p=12686 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with auto plugin: Attempting to decrypt but no vault
+secrets found
+
+2023-05-21 12:31:43,365 p=12686 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with yaml plugin: Attempting to decrypt but no vault
+secrets found
+
+2023-05-21 12:31:43,365 p=12686 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with ini plugin: Attempting to decrypt but no vault
+secrets found
+
+2023-05-21 12:31:43,366 p=12686 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/inv.yml as an inventory source
+
+2023-05-21 12:31:43,366 p=12686 u=ec2-user n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-21 12:31:43,470 p=12686 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: devserver
+
+2023-05-21 12:31:43,471 p=12686 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 12:31:43,472 p=12686 u=ec2-user n=ansible | skipping: no hosts matched
+2023-05-21 12:31:43,472 p=12686 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 12:36:44,903 p=12825 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with auto plugin: Decryption failed (no vault secrets
+were found that could decrypt) on /home/ec2-user/inv.yml
+
+2023-05-21 12:36:44,903 p=12825 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with yaml plugin: Decryption failed (no vault secrets
+were found that could decrypt) on /home/ec2-user/inv.yml
+
+2023-05-21 12:36:44,903 p=12825 u=ec2-user n=ansible | [WARNING]:  * Failed to parse /home/ec2-user/inv.yml with ini plugin: Decryption failed (no vault secrets were
+found that could decrypt) on /home/ec2-user/inv.yml
+
+2023-05-21 12:36:44,904 p=12825 u=ec2-user n=ansible | [WARNING]: Unable to parse /home/ec2-user/inv.yml as an inventory source
+
+2023-05-21 12:36:44,904 p=12825 u=ec2-user n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-05-21 12:36:45,084 p=12825 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: devserver
+
+2023-05-21 12:36:45,088 p=12825 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 12:36:45,088 p=12825 u=ec2-user n=ansible | skipping: no hosts matched
+2023-05-21 12:36:45,089 p=12825 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 12:36:55,796 p=12870 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 12:36:55,820 p=12870 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 12:36:57,823 p=12870 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:36:57,845 p=12870 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 12:36:58,319 p=12870 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 12:36:58,342 p=12870 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 12:36:58,343 p=12870 u=ec2-user n=ansible | 18.212.21.228              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:43:06,291 p=13086 u=ec2-user n=ansible | Decryption successful
+2023-05-21 12:43:58,594 p=13151 u=ec2-user n=ansible | Encryption successful
+2023-05-21 12:53:36,958 p=13537 u=ec2-user n=ansible | Decryption successful
+2023-05-21 12:54:12,323 p=13639 u=ec2-user n=ansible | Encryption successful
+2023-05-21 12:55:25,432 p=13733 u=ec2-user n=ansible | [WARNING]: Error in vault password prompt (default): Passwords do not match
+
+2023-05-21 12:55:25,432 p=13733 u=ec2-user n=ansible | ERROR! Passwords do not match
+2023-05-21 12:55:47,512 p=13817 u=ec2-user n=ansible | Rekey successful
+2023-05-21 12:56:03,892 p=13883 u=ec2-user n=ansible | Decryption successful
+2023-05-21 13:42:12,346 p=14398 u=ec2-user n=ansible | playbook: play.yml
+2023-05-21 13:47:26,825 p=14504 u=ec2-user n=ansible | PLAY [devserver] **********************************************************************************************
+2023-05-21 13:47:26,839 p=14504 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-21 13:47:28,954 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 13:47:28,976 p=14504 u=ec2-user n=ansible | TASK [Creating user] ******************************************************************************************
+2023-05-21 13:47:29,702 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 13:47:29,715 p=14504 u=ec2-user n=ansible | TASK [create file] ********************************************************************************************
+2023-05-21 13:47:30,122 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 13:47:30,134 p=14504 u=ec2-user n=ansible | TASK [read the output] ****************************************************************************************
+2023-05-21 13:47:30,160 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228] => {
+    "msg": "Hello from ansible this is running on RedHat"
+}
+2023-05-21 13:47:30,172 p=14504 u=ec2-user n=ansible | TASK [Create directory] ***************************************************************************************
+2023-05-21 13:47:30,545 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 13:47:30,562 p=14504 u=ec2-user n=ansible | TASK [create a file] ******************************************************************************************
+2023-05-21 13:47:31,030 p=14504 u=ec2-user n=ansible | skipping: [18.212.21.228]
+2023-05-21 13:47:31,043 p=14504 u=ec2-user n=ansible | TASK [install apache] *****************************************************************************************
+2023-05-21 13:47:32,222 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228]
+2023-05-21 13:47:32,235 p=14504 u=ec2-user n=ansible | TASK [install finger] *****************************************************************************************
+2023-05-21 13:47:33,111 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=wget)
+2023-05-21 13:47:33,983 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=samba)
+2023-05-21 13:47:55,652 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=java-11*)
+2023-05-21 13:47:56,573 p=14504 u=ec2-user n=ansible | ok: [18.212.21.228] => (item=finger)
+2023-05-21 13:47:56,609 p=14504 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-21 13:47:56,609 p=14504 u=ec2-user n=ansible | 18.212.21.228              : ok=7    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-21 20:11:32,346 p=3567 u=ec2-user n=ansible | 52.3.228.158 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-21 20:11:32,452 p=3567 u=ec2-user n=ansible | 44.211.41.240 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-22 04:16:18,310 p=7529 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to be in '/home/ec2-user/web1.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  become:true
+  roles:
+  ^ here
+
+2023-05-22 04:18:19,661 p=7743 u=ec2-user n=ansible | ERROR! The handlers/main.yml file for role 'apache' must contain a list of tasks
+
+The error appears to be in '/home/ec2-user/roles/apache/handlers/main.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# handlers file for apache
+-name: restart apache
+^ here
+
+2023-05-22 04:20:55,797 p=7791 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/ec2-user/roles/apache/handlers/main.yml': line 4, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: restart apache
+service:
+^ here
+
+2023-05-22 04:29:54,548 p=7888 u=ec2-user n=ansible | PLAY [qaserver] ***********************************************************************************************
+2023-05-22 04:29:54,563 p=7888 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-22 04:29:57,472 p=7888 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 04:29:57,526 p=7888 u=ec2-user n=ansible | TASK [apache : Install Apache] ********************************************************************************
+2023-05-22 04:29:59,816 p=7888 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:29:59,859 p=7888 u=ec2-user n=ansible | TASK [apache : copy index file] *******************************************************************************
+2023-05-22 04:30:00,691 p=7888 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:30:00,738 p=7888 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *********************************************************************
+2023-05-22 04:30:02,684 p=7888 u=ec2-user n=ansible | fatal: [52.3.228.158]: FAILED! => {"changed": false, "msg": "Could not find the requested service httpd: host"}
+2023-05-22 04:30:02,685 p=7888 u=ec2-user n=ansible | NO MORE HOSTS LEFT ********************************************************************************************
+2023-05-22 04:30:02,700 p=7888 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-22 04:30:02,700 p=7888 u=ec2-user n=ansible | 52.3.228.158               : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-22 04:32:26,782 p=8028 u=ec2-user n=ansible | PLAY [qaserver] ***********************************************************************************************
+2023-05-22 04:32:26,798 p=8028 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-22 04:32:29,065 p=8028 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 04:32:29,106 p=8028 u=ec2-user n=ansible | TASK [apache : Install Apache] ********************************************************************************
+2023-05-22 04:32:30,615 p=8028 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:32:30,627 p=8028 u=ec2-user n=ansible | TASK [apache : copy index file] *******************************************************************************
+2023-05-22 04:32:30,994 p=8028 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:32:31,016 p=8028 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *********************************************************************
+2023-05-22 04:32:31,808 p=8028 u=ec2-user n=ansible | fatal: [52.3.228.158]: FAILED! => {"changed": false, "msg": "Could not find the requested service httpd: host"}
+2023-05-22 04:32:31,808 p=8028 u=ec2-user n=ansible | NO MORE HOSTS LEFT ********************************************************************************************
+2023-05-22 04:32:31,810 p=8028 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-22 04:32:31,810 p=8028 u=ec2-user n=ansible | 52.3.228.158               : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-22 04:43:31,137 p=8395 u=ec2-user n=ansible | PLAY [qaserver] ***********************************************************************************************
+2023-05-22 04:43:31,153 p=8395 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-22 04:43:32,984 p=8395 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 04:43:33,006 p=8395 u=ec2-user n=ansible | TASK [apache : Install Apache] ********************************************************************************
+2023-05-22 04:43:34,509 p=8395 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:43:34,521 p=8395 u=ec2-user n=ansible | TASK [apache : copy index file] *******************************************************************************
+2023-05-22 04:43:34,909 p=8395 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 04:43:34,930 p=8395 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *********************************************************************
+2023-05-22 04:43:35,652 p=8395 u=ec2-user n=ansible | fatal: [52.3.228.158]: FAILED! => {"changed": false, "msg": "Could not find the requested service httpd: host"}
+2023-05-22 04:43:35,653 p=8395 u=ec2-user n=ansible | NO MORE HOSTS LEFT ********************************************************************************************
+2023-05-22 04:43:35,654 p=8395 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-22 04:43:35,655 p=8395 u=ec2-user n=ansible | 52.3.228.158               : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-22 06:02:47,034 p=9745 u=ec2-user n=ansible | PLAY [qaserver] ***********************************************************************************************
+2023-05-22 06:02:47,048 p=9745 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-22 06:02:48,924 p=9745 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 06:02:48,945 p=9745 u=ec2-user n=ansible | TASK [apache : Install Apache] ********************************************************************************
+2023-05-22 06:02:57,444 p=9745 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 06:02:57,472 p=9745 u=ec2-user n=ansible | TASK [apache : copy index file] *******************************************************************************
+2023-05-22 06:02:58,885 p=9745 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 06:02:58,907 p=9745 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *********************************************************************
+2023-05-22 06:02:59,795 p=9745 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 06:02:59,808 p=9745 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-22 06:02:59,808 p=9745 u=ec2-user n=ansible | 52.3.228.158               : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 06:06:14,922 p=9947 u=ec2-user n=ansible | PLAY [qaserver] ***********************************************************************************************
+2023-05-22 06:06:14,937 p=9947 u=ec2-user n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-05-22 06:06:16,840 p=9947 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 06:06:16,863 p=9947 u=ec2-user n=ansible | TASK [apache : Install Apache] ********************************************************************************
+2023-05-22 06:06:17,952 p=9947 u=ec2-user n=ansible | ok: [52.3.228.158]
+2023-05-22 06:06:17,965 p=9947 u=ec2-user n=ansible | TASK [apache : copy index file] *******************************************************************************
+2023-05-22 06:06:19,219 p=9947 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 06:06:19,243 p=9947 u=ec2-user n=ansible | RUNNING HANDLER [apache : restart apache] *********************************************************************
+2023-05-22 06:06:21,128 p=9947 u=ec2-user n=ansible | changed: [52.3.228.158]
+2023-05-22 06:06:21,163 p=9947 u=ec2-user n=ansible | PLAY RECAP ****************************************************************************************************
+2023-05-22 06:06:21,164 p=9947 u=ec2-user n=ansible | 52.3.228.158               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 14:44:21,612 p=12843 u=ec2-user n=ansible | Starting galaxy role install process
+2023-05-22 14:44:21,613 p=12843 u=ec2-user n=ansible | - downloading role 'java', owned by geerlingguy
+2023-05-22 14:44:21,833 p=12843 u=ec2-user n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/2.3.0.tar.gz
+2023-05-22 14:44:21,997 p=12843 u=ec2-user n=ansible | - extracting geerlingguy.java to /home/ec2-user/roles/geerlingguy.java
+2023-05-22 14:44:22,002 p=12843 u=ec2-user n=ansible | - geerlingguy.java (2.3.0) was installed successfully
